@@ -143,6 +143,9 @@ img {
 }
 
 .header-contacts-link {
+    display: flex;
+    align-items: center;
+
     color: var(--primary-text-color);
 }
 
@@ -151,13 +154,34 @@ img {
     color: var(--akcent-color);
 }
 
+.header-mail-icon {
+    margin-right: 10px;
+    
+    fill: var(--primary-text-color);
+}
+
+.header-contacts-link:hover .header-mail-icon,
+.header-contacts-link:focus .header-mail-icon {
+    fill: var(--akcent-color);
+}
+
 /* ===================hero=================== */
 
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
+    margin: 0 auto;
 
-    background-color: var(--hero-bgr-color);
+    background-color: #C4C4C4;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     text-align: center;    
 }
@@ -206,6 +230,22 @@ img {
 
 .features-list-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.features-bg-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    width: 270px;
+    height: 120px;
+
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.features-icon {
 }
 
 .features-title {
@@ -266,10 +306,20 @@ img {
     margin-right: 30px;
 }
 
+.comand-list-item {
+    box-shadow: 
+        0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .comand-list-content {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    background-color: #ffffff;
 }
 
 .comand-title-name {
@@ -284,9 +334,42 @@ img {
 }
 
 .comand-profession {
+    margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+}
+
+.comand-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.comand-soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.comand-soc-item + .comand-soc-item {
+    margin-left: 10px;
+}
+
+.comand-soc-icon {
+    fill: #AFB1B8;
+}
+
+.comand-soc-link:hover,
+.comand-soc-link:focus {
+    background-color: var(--akcent-color);
+}
+
+.comand-soc-link:hover .comand-soc-icon,
+.comand-soc-link:focus .comand-soc-icon {
+    fill: #ffffff;
 }
 
 /* ===================footer=================== */
