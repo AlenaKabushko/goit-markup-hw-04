@@ -419,11 +419,16 @@ img {
 /* ===================footer=================== */
 
 .footer {
+    max-width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-bottom: 15px;
+    margin: 0 auto;
 
     background-color: var(--footer-bgr-color);
+}
+
+.all-contacts {
+    margin-right: 70px;
 }
 
 .footer-studio {
@@ -432,7 +437,7 @@ img {
 
 .address {
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 9px;
 
     color: var(--another-text-color);
@@ -458,6 +463,55 @@ img {
 .footer-link:focus {
     color: var(--akcent-color);
 }
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.join-title {
+margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    
+    color: var(--another-text-color);
+}
+
+.join-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.join-soc-item + .join-soc-item {
+    margin-left: 10px;
+}
+
+.join-soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.1);
+
+    cursor: pointer;
+}
+
+.join-soc-icon {
+    fill: #ffffff;
+}
+
+.join-soc-link:hover,
+.join-soc-link:focus {
+    background-color: var(--akcent-color);
+}
+
+
 
 /* *****************portfolio***************** */
 
